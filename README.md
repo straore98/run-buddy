@@ -11,3 +11,5 @@ A website that offers fitness training services.
 https://straore98.github.io/run-buddy/
 
 ## Made with ❤️ by Safia Traore
+
+### ©2019 Run Buddy, Inc
