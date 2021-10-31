@@ -132,63 +132,6 @@ section {
 }
 /*Hero Radio Button Style End*/
 
-/*What we do section style start*/
-.intro p {
-    line-height: 1.7;
-    color: #39a6b2;
-    width: 80%;
-    font-size: 20px;
-    margin: 0 auto;
-    text-align: center
-}
-/*What we do section style end*/
-
-/*What you do section style start*/
-.steps {
-    background: #fce138;
-}
-.step {
-    margin: 50px auto;
-    padding-bottom: 50px;
-    width: 80%;
-    border-bottom: 1px solid #39a6b2;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-}
-.step h3 {
-    color: #024e76;
-    font-size: 46px;
-    flex: 1 30%;
-}
-.step-info {
-    flex: 2 70%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
-.step-img {
-    flex: 1 12%;
-    margin-right: 20px;
-}
-.step-img img {
-    max-width: 100%;
-}
-.step-text {
-    flex:12
-}
-.step-text p {
-    color: #39a6b2;
-    font-size: 18px;
-}
-.step-text h4 {
-    font-size: 26px;
-    line-height: 1.5px;
-    color: #024e76;
-}
-/*What you do section style end*/
-
 /*heading template styles*/
 .section-title {
     font-size: 48px;
@@ -207,6 +150,63 @@ section {
 }
 /*heading template styles end*/
 
+/*What we do section style start*/
+.intro p {
+    line-height: 1.7;
+    color: #39a6b2;
+    width: 80%;
+    font-size: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+/*What we do section style end*/
+
+/*What you do section style start*/
+.steps {
+    background: #fce138;
+}
+.step {
+    margin: 50px auto;
+    padding-bottom: 50px;
+    width: 80%;
+    border-bottom: 1px solid #39a6b2;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+step h3 {
+    color: #024e76;
+    font-size: 46px;
+    flex: 1 30%;
+}
+.step-info {
+    flex: 2 70%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.step-img {
+    flex: 1 12%;
+    margin-right: 20px;
+}
+.step-img img {
+    max-width: 100%;
+}
+.step-text {
+    flex: 12;
+}
+.step-text p {
+    color: #39a6b2;
+    font-size: 18px;
+}
+.step-text h4 {
+    font-size: 26px;
+    line-height: 1.5;
+    color: #024e76;
+}
+/*What you do section style end*/
+
 /*meet the trainers section styles start*/
 .trainers {
     width: 100%;
@@ -219,7 +219,7 @@ section {
     margin: 20px;
     background: #024e76;
     color: #fce138;
-    flex: 1
+    flex: 1;
 }
 .trainer img {
     width: 100%;
@@ -258,8 +258,6 @@ section {
 }
 .contact-info iframe {
     height: 400px;
-    margin: auto;
-    padding-bottom: 25px;
 }
 .contact-info div {
   color: white;  
@@ -311,18 +309,91 @@ section {
 
 /*Media query for smaller desktop screens and smaller*/
 @media screen and (max-width: 980px) {
-    
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+    }
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+    header nav ul li a {
+        font-size: 20px;
+    }
+    footer h2, footer div {
+        text-align: center;
+        width: 100%;
+    }
+    .hero-cta, .hero-form {
+        width: 100%;
+    }
+    .hero-cta {
+        text-align: center;
+    }
+    .section-title {
+        width: 80%;
+    }
+    .trainer {
+        flex: 0 70%;
+    }
+    .contact-info iframe {
+        flex: 1 100%;
+    }
+    .step-text h4 {
+        line-height: 1.5px;
     }
 }
 
 /*Media query for tablets and smaller*/
 @media screen and (max-width: 768px) {
-    
+    section {
+        padding: 30px 15px;
+    }
+    .step h3 {
+        flex: 1 100%;
+        text-align: center;
+    }
+    .step-info {
+        flex: 2 100%;
+        text-align: center;
+        justify-content: center;
+    }
+    .step-img {
+        flex: 0 32%;
+        margin-right: 0;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .step-text {
+        flex: 100%;
     }
 }
-
 /*Media query for mobile phones and smaller*/
 @media screen and (max-width: 575px) {
-  
+    .hero-form button {
+        width: 100%;
+    }
+    .section-title {
+        width: 95%;
+    }
+    .intro p {
+        width: 100%;
+    }
+    .trainer {
+        flex: 0 100%;
+    }
+    .contact-info {
+        text-align: center;
+    }
+    .contact-info > * {
+        flex: 0 100%;
+    }
+    .contact-form {
+        order: 3;
     }
 }
